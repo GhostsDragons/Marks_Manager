@@ -3,7 +3,7 @@ package com.example.marks_app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import java.util.*;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
@@ -35,12 +35,14 @@ public class MainActivity extends AppCompatActivity {
         btnLogIn = findViewById(R.id.btnLogIn);
         signup = findViewById(R.id.TVSignIn);
         forgetpassButton = findViewById(R.id.forgetpass);
+        FirebaseAuth.getInstance().signOut();
 
 
-//        authStateListener = new FirebaseAuth.AuthStateListener() {
-//            @Override
-//            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-//                FirebaseUser user = firebaseAuth.getCurrentUser();
+
+        authStateListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser user = firebaseAuth.getCurrentUser();
 //                if (user != null) {
 //                    Toast.makeText(MainActivity.this, "User logged in ", Toast.LENGTH_SHORT).show();
 ////                    Intent I = new Intent(MainActivity.this, UserActivity.class);
@@ -48,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
 //                } else {
 //                    Toast.makeText(MainActivity.this, "Login to continue", Toast.LENGTH_SHORT).show();
 //                }
-//            }
-//        };
+            }
+        };
 //        signup.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
@@ -85,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                                 Toast.makeText(MainActivity.this, "Not sucessfull", Toast.LENGTH_SHORT).show();
                             }
                             else {
-//                                startActivity(new Intent(MainActivity.this, Database.class));
+                                startActivity(new Intent(MainActivity.this, Database.class));
                             }
                         }
                     });
