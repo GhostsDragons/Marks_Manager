@@ -35,10 +35,6 @@ public class MainActivity extends AppCompatActivity {
         btnLogIn = findViewById(R.id.btnLogIn);
         signup = findViewById(R.id.TVSignIn);
         forgetpassButton = findViewById(R.id.forgetpass);
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("message");
-
-        myRef.setValue("Hello, World!");
 
 
         authStateListener = new FirebaseAuth.AuthStateListener() {
