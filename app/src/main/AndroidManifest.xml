@@ -18,6 +18,9 @@
             android:name=".Mathematics"
             android:exported="false" />
         <activity
+            android:name=".TeacherActivity"
+            android:exported="false" />
+        <activity
             android:name=".Database"
             android:exported="false" />
         <activity
