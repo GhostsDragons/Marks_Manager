@@ -4,4 +4,8 @@
         <item>Student</item>
         <item>Teacher</item>
     </string-array>
+    <string-array name="examname">
+        <item>Student</item>
+        <item>Teacher</item>
+    </string-array>
 </resources>
