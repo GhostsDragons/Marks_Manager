@@ -22,7 +22,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
-    public EditText loginEmailId, logInpasswd;
+    EditText loginEmailId, logInpasswd;
+    String selectedOption;
     Button btnLogIn;
     Button forgetpassButton;
     TextView signup;
@@ -81,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String selectedOption = parent.getItemAtPosition(position).toString();
+                selectedOption = parent.getItemAtPosition(position).toString();
                 Log.d("Spinner","Selected option: " + selectedOption);
             }
 
@@ -110,7 +111,12 @@ public class MainActivity extends AppCompatActivity {
                                 Toast.makeText(MainActivity.this, "Not sucessfull", Toast.LENGTH_SHORT).show();
                             }
                             else {
-                                startActivity(new Intent(MainActivity.this, Database.class));
+                                if (selectedOption.compareTo("Teacher") == 0) {
+                                    startActivity(new Intent(MainActivity.this, Database.class));
+                                }
+                                else {
+                                    startActivity(new Intent(MainActivity.this, Database.class));
+                                }
                             }
                         }
                     });

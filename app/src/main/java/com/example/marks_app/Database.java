@@ -27,17 +27,19 @@ public class Database extends AppCompatActivity {
     // variable for Text view.
     private TextView retrieveTV;
 
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint({"MissingInflatedId", "RestrictedApi"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_database);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("Child/Hari/College");
+        DatabaseReference myRef = database.getReference("Biology");
 
-        myRef.setValue("NMIMS");
+        String path = myRef.getPath().toString();
         Toast.makeText(Database.this, "Storage Successful", Toast.LENGTH_LONG).show();
+
+
 
 //        // below line is used to get the instance
 //        // of our Firebase database.

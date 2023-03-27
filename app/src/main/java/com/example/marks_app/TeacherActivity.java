@@ -36,7 +36,7 @@ public class TeacherActivity extends AppCompatActivity {
 
         Maths.setOnClickListener(v-> {
 
-            startActivity(new Intent(TeacherActivity.this, Database.class));
+            startActivity(new Intent(TeacherActivity.this, Mathematics.class));
         });
     }
 
