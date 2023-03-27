@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
         btnLogIn = findViewById(R.id.btnLogIn);
         signup = findViewById(R.id.TVSignIn);
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("message");
+        DatabaseReference myRef = database.getReference("Child/Hari/DOB");
 
-        myRef.setValue("Hello, World!");
+        myRef.setValue("19/Oct");
 
 
         authStateListener = new FirebaseAuth.AuthStateListener() {
