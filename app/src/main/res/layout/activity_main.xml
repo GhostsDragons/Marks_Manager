@@ -77,7 +77,7 @@
         app:layout_constraintVertical_bias="0.268" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/positionselector"
         android:layout_width="315dp"
         android:layout_height="41dp"
         app:layout_constraintBottom_toTopOf="@+id/loginEmail"
