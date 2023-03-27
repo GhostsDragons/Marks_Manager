@@ -3,7 +3,7 @@ package com.example.marks_app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-
+import java.util.*;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
@@ -20,6 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class MainActivity extends AppCompatActivity {
     public EditText loginEmailId, logInpasswd;
     Button btnLogIn;
+    Button forgetpassButton;
     TextView signup;
     FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
@@ -33,6 +34,10 @@ public class MainActivity extends AppCompatActivity {
         logInpasswd = findViewById(R.id.loginpaswd);
         btnLogIn = findViewById(R.id.btnLogIn);
         signup = findViewById(R.id.TVSignIn);
+        forgetpassButton = findViewById(R.id.forgetpass);
+        FirebaseAuth.getInstance().signOut();
+        Toast.makeText(MainActivity.this, "User Sign out!", Toast.LENGTH_SHORT).show();
+
 
         authStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -40,18 +45,25 @@ public class MainActivity extends AppCompatActivity {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
                     Toast.makeText(MainActivity.this, "User logged in ", Toast.LENGTH_SHORT).show();
-                    Intent I = new Intent(MainActivity.this, Database.class);
-                    startActivity(I);
+//                    Intent I = new Intent(MainActivity.this, UserActivity.class);
+//                    startActivity(I);
                 } else {
                     Toast.makeText(MainActivity.this, "Login to continue", Toast.LENGTH_SHORT).show();
                 }
             }
         };
-        signup.setOnClickListener(new View.OnClickListener() {
+//        signup.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent I = new Intent(MainActivity.this, MainActivity.class);
+//                startActivity(I);
+//            }
+//        });
+        forgetpassButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent I = new Intent(MainActivity.this, MainActivity.class);
-                startActivity(I);
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ForgetPassword.class);
+                startActivity(intent);
             }
         });
         btnLogIn.setOnClickListener(new View.OnClickListener() {
@@ -75,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                                 Toast.makeText(MainActivity.this, "Not sucessfull", Toast.LENGTH_SHORT).show();
                             }
                             else {
-//                                startActivity(new Intent(MainActivity.this, Database.class));
+                                startActivity(new Intent(MainActivity.this, Database.class));
                             }
                         }
                     });
