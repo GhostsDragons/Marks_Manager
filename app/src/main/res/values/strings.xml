@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Marks Manager</string>
-        <string-array name="position">
-            <item>Student</item>
-            <item>Teacher</item>
-        </string-array>
+    <string-array name="position">
+        <item>Student</item>
+        <item>Teacher</item>
+    </string-array>
 </resources>
