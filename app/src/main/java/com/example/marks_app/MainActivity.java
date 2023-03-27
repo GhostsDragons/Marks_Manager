@@ -33,11 +33,6 @@ public class MainActivity extends AppCompatActivity {
         logInpasswd = findViewById(R.id.loginpaswd);
         btnLogIn = findViewById(R.id.btnLogIn);
         signup = findViewById(R.id.TVSignIn);
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("Child/Hari/DOB");
-
-        myRef.setValue("19/Oct");
-
 
         authStateListener = new FirebaseAuth.AuthStateListener() {
             @Override

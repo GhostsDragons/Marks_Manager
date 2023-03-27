@@ -31,7 +31,7 @@ public class Database extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_firebase);
+        setContentView(R.layout.activity_database);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("Child/Hari/College");
@@ -45,7 +45,7 @@ public class Database extends AppCompatActivity {
 
         // below line is used to get
         // reference for our database.
-        databaseReference = firebaseDatabase.getReference("Child/Hari/College");
+        databaseReference = firebaseDatabase.getReference("Child/Hari/Age");
 
         // initializing our object class variable.
         retrieveTV = findViewById(R.id.textView2);
@@ -79,7 +79,8 @@ public class Database extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError error) {
                 // calling on cancelled method when we receive
                 // any error or we are not able to get the data.
-                Toast.makeText(Database.this, "Fail to get data.", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(Database.this, "Fail to get data.", Toast.LENGTH_SHORT).show();
+                retrieveTV.setText("Error");
             }
         });
     }
