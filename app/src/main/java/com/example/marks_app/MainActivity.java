@@ -20,6 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class MainActivity extends AppCompatActivity {
     public EditText loginEmailId, logInpasswd;
     Button btnLogIn;
+    Button forgetpassButton;
     TextView signup;
     FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         logInpasswd = findViewById(R.id.loginpaswd);
         btnLogIn = findViewById(R.id.btnLogIn);
         signup = findViewById(R.id.TVSignIn);
+        forgetpassButton = findViewById(R.id.forgetpass);
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("message");
 
@@ -57,6 +59,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent I = new Intent(MainActivity.this, MainActivity.class);
                 startActivity(I);
+            }
+        });
+        forgetpassButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ForgetPassword.class);
+                startActivity(intent);
             }
         });
         btnLogIn.setOnClickListener(new View.OnClickListener() {
