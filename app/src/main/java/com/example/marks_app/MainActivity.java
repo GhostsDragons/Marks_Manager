@@ -37,26 +37,26 @@ public class MainActivity extends AppCompatActivity {
         forgetpassButton = findViewById(R.id.forgetpass);
 
 
-        authStateListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                FirebaseUser user = firebaseAuth.getCurrentUser();
-                if (user != null) {
-                    Toast.makeText(MainActivity.this, "User logged in ", Toast.LENGTH_SHORT).show();
-//                    Intent I = new Intent(MainActivity.this, UserActivity.class);
-//                    startActivity(I);
-                } else {
-                    Toast.makeText(MainActivity.this, "Login to continue", Toast.LENGTH_SHORT).show();
-                }
-            }
-        };
-        signup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent I = new Intent(MainActivity.this, MainActivity.class);
-                startActivity(I);
-            }
-        });
+//        authStateListener = new FirebaseAuth.AuthStateListener() {
+//            @Override
+//            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+//                FirebaseUser user = firebaseAuth.getCurrentUser();
+//                if (user != null) {
+//                    Toast.makeText(MainActivity.this, "User logged in ", Toast.LENGTH_SHORT).show();
+////                    Intent I = new Intent(MainActivity.this, UserActivity.class);
+////                    startActivity(I);
+//                } else {
+//                    Toast.makeText(MainActivity.this, "Login to continue", Toast.LENGTH_SHORT).show();
+//                }
+//            }
+//        };
+//        signup.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent I = new Intent(MainActivity.this, MainActivity.class);
+//                startActivity(I);
+//            }
+//        });
         forgetpassButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                                 Toast.makeText(MainActivity.this, "Not sucessfull", Toast.LENGTH_SHORT).show();
                             }
                             else {
-//                                startActivity(new Intent(MainActivity.this, UserActivity.class));
+//                                startActivity(new Intent(MainActivity.this, Database.class));
                             }
                         }
                     });
