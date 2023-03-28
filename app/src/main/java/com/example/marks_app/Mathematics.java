@@ -8,14 +8,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.SpinnerAdapter;
-import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 //
 //public class practice<FirebaseListAdapter extends SpinnerAdapter> extends AppCompatActivity {
 //
@@ -57,7 +51,7 @@ public class Mathematics extends AppCompatActivity {
         name = findViewById(R.id.Name);
         marks = findViewById(R.id.Marks);
         Test = findViewById(R.id.examselect);
-        ArrayAdapter adapter = ArrayAdapter.createFromResource(this,
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.Test, android.R.layout.simple_spinner_item);
 
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
