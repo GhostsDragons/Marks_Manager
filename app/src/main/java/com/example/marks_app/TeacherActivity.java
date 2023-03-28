@@ -21,17 +21,17 @@ public class TeacherActivity extends AppCompatActivity {
 
         Bio.setOnClickListener(v-> {
 
-            startActivity(new Intent(TeacherActivity.this, Database.class));
+            startActivity(new Intent(TeacherActivity.this, Biology.class));
         });
 
         Phys.setOnClickListener(v-> {
 
-            startActivity(new Intent(TeacherActivity.this, Database.class));
+            startActivity(new Intent(TeacherActivity.this, Physics.class));
         });
 
         Chem.setOnClickListener(v-> {
 
-            startActivity(new Intent(TeacherActivity.this, Database.class));
+            startActivity(new Intent(TeacherActivity.this, Chemistry.class));
         });
 
         Maths.setOnClickListener(v-> {

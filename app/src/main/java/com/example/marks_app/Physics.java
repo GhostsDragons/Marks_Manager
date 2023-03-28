@@ -16,7 +16,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 
-public class Mathematics extends AppCompatActivity {
+public class Physics extends AppCompatActivity {
     Button save;
     Spinner Test;
     EditText name, marks;
@@ -26,7 +26,7 @@ public class Mathematics extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mathematics);
+        setContentView(R.layout.activity_physics);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
 
@@ -57,10 +57,10 @@ public class Mathematics extends AppCompatActivity {
         save.setOnClickListener(v-> {
             namestring = name.getText().toString();
             marksint = Integer.parseInt(marks.getText().toString());
-            path = "Mathematics/"+selectedOption+"/"+namestring;
+            path = "Physics/"+selectedOption+"/"+namestring;
             DatabaseReference myRef = database.getReference(path);
             myRef.setValue(marksint);
-            Toast.makeText(Mathematics.this, "Marks Updated", Toast.LENGTH_LONG).show();
+            Toast.makeText(Physics.this, "Marks Updated", Toast.LENGTH_LONG).show();
             name.setText("");
             marks.setText("");
         });
