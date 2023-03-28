@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
                             }
                             else {
                                 if (selectedOption.compareTo("Teacher") == 0) {
-                                    startActivity(new Intent(MainActivity.this, Database.class));
+                                    startActivity(new Intent(MainActivity.this, TeacherActivity.class));
                                 }
                                 else {
                                     startActivity(new Intent(MainActivity.this, Database.class));

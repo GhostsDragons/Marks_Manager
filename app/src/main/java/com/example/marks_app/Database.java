@@ -33,10 +33,10 @@ public class Database extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_database);
-        hi = findViewById(R.id.textView);
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("Biology");
 
+        myRef.setValue("NMIMS");
         String path = myRef.getPath().toString();
         Toast.makeText(Database.this, "Storage Successful", Toast.LENGTH_LONG).show();
 
@@ -57,27 +57,27 @@ public class Database extends AppCompatActivity {
 //        // for getting data.
 //        getdata();
     }
-    private void getKeyValues(){
-
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("promotion").child("discount");
-
-        databaseReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                String key = dataSnapshot.getKey();
-
-                for (DataSnapshot child: dataSnapshot.getChildren()){
-                    //Object object = child.getKey();
-                    labelGetKey.setText(child.getKey());
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                Log.e("Read Fail", "Error");
-            }
-        });
-    }
+//    private void getKeyValues(){
+//
+//        databaseReference = FirebaseDatabase.getInstance().getReference().child("promotion").child("discount");
+//
+//        databaseReference.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(DataSnapshot dataSnapshot) {
+//                String key = dataSnapshot.getKey();
+//
+//                for (DataSnapshot child: dataSnapshot.getChildren()){
+//                    //Object object = child.getKey();
+//                    labelGetKey.setText(child.getKey());
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(DatabaseError databaseError) {
+//                Log.e("Read Fail", "Error");
+//            }
+//        });
+//    }
 //    private void getdata() {
 //
 //        // calling add value event listener method
