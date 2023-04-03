@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/gradient_lc">
 
     <EditText
         android:id="@+id/loginEmail"
@@ -42,6 +43,8 @@
         android:layout_marginTop="52dp"
         android:text="Login In"
         android:textSize="25sp"
+        android:background="#1C4454"
+        android:textColor="#F3F3F3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -53,9 +56,11 @@
         android:id="@+id/forgetpass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#1C4454"
         android:text="Forgot Password"
+        android:textColor="#F3F3F3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogIn" />
 
@@ -63,6 +68,7 @@
         android:id="@+id/positionselector"
         android:layout_width="315dp"
         android:layout_height="48dp"
+        android:background="#2E626D"
         app:layout_constraintBottom_toTopOf="@+id/loginEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
