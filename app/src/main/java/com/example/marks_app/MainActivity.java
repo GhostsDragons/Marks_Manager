@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
         loginEmailId = findViewById(R.id.loginEmail);
         logInpasswd = findViewById(R.id.loginpaswd);
         btnLogIn = findViewById(R.id.btnLogIn);
-        signup = findViewById(R.id.TVSignIn);
         Spinner spinner = findViewById(R.id.positionselector);
         forgetpassButton = findViewById(R.id.forgetpass);
         FirebaseAuth.getInstance().signOut();
