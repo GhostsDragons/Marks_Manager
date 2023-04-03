@@ -57,7 +57,7 @@ public class Biology extends AppCompatActivity {
         save.setOnClickListener(v-> {
             namestring = name.getText().toString();
             marksint = Integer.parseInt(marks.getText().toString());
-            path = "Biology/"+selectedOption+"/"+namestring;
+            path = namestring+"/"+"Biology/"+selectedOption;
             DatabaseReference myRef = database.getReference(path);
             myRef.setValue(marksint);
             Toast.makeText(Biology.this, "Marks Updated", Toast.LENGTH_LONG).show();

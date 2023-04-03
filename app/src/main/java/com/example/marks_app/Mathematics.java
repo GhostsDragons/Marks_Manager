@@ -57,7 +57,7 @@ public class Mathematics extends AppCompatActivity {
         save.setOnClickListener(v-> {
             namestring = name.getText().toString();
             marksint = Integer.parseInt(marks.getText().toString());
-            path = "Mathematics/"+selectedOption+"/"+namestring;
+            path = namestring+"/"+"Mathematics/"+selectedOption;
             DatabaseReference myRef = database.getReference(path);
             myRef.setValue(marksint);
             Toast.makeText(Mathematics.this, "Marks Updated", Toast.LENGTH_LONG).show();

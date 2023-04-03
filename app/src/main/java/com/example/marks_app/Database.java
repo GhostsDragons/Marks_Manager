@@ -33,12 +33,11 @@ public class Database extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_database);
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("Biology");
-
-        myRef.setValue("NMIMS");
-        String path = myRef.getPath().toString();
-        Toast.makeText(Database.this, "Storage Successful", Toast.LENGTH_LONG).show();
+//        FirebaseDatabase database = FirebaseDatabase.getInstance();
+//        DatabaseReference myRef = database.getReference("Biology");
+//
+//        myRef.setValue("NMIMS");
+//        Toast.makeText(Database.this, "Storage Successful", Toast.LENGTH_LONG).show();
 
 
 

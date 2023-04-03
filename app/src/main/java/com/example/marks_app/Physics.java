@@ -57,7 +57,7 @@ public class Physics extends AppCompatActivity {
         save.setOnClickListener(v-> {
             namestring = name.getText().toString();
             marksint = Integer.parseInt(marks.getText().toString());
-            path = "Physics/"+selectedOption+"/"+namestring;
+            path = namestring+"/"+"Physics/"+selectedOption;
             DatabaseReference myRef = database.getReference(path);
             myRef.setValue(marksint);
             Toast.makeText(Physics.this, "Marks Updated", Toast.LENGTH_LONG).show();
