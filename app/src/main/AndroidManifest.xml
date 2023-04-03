@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Marks_app"
         tools:targetApi="31">
         <activity
+            android:name=".StudentActivity"
+            android:exported="false" />
+        <activity
             android:name=".Chemistry"
             android:exported="false" />
         <activity
