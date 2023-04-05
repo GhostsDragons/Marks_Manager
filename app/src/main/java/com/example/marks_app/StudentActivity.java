@@ -61,12 +61,14 @@ public class StudentActivity extends AppCompatActivity {
             TextView subject = new TextView(this);
             subject.setText(Subject);
             subject.setAllCaps(true);
+            subject.setGravity(Gravity.CENTER);
             subject.setTextSize(25);
-            table.addView(subject);
+            stud.addView(subject);
             for (int i = 0; i < 3; i++) {
                 TextView Mark = new TextView(this);
                 Mark.setText(""+marks[i]);
                 Mark.setTextSize(20);
+                Mark.setGravity(Gravity.CENTER);
                 stud.addView(Mark);
             }
             table.addView(stud);
