@@ -7,8 +7,10 @@
     tools:context=".StudentActivity">
 
     <TableLayout
+        android:id="@+id/Marks_Table"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="50sp"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
@@ -18,7 +20,7 @@
                 android:layout_height="match_parent"
                 android:text="Subject"
                 android:padding = "10sp"
-                android:textSize="14sp"
+                android:textSize="35sp"
                 android:layout_weight="4"
                 android:gravity="center_horizontal"/>
 
@@ -27,7 +29,7 @@
                 android:layout_height="match_parent"
                 android:text="UT1"
                 android:padding = "10sp"
-                android:textSize="14sp"
+                android:textSize="35sp"
                 android:layout_weight="4"
                 android:gravity="center_horizontal"/>
 
@@ -36,7 +38,7 @@
                 android:layout_height="match_parent"
                 android:text="UT2"
                 android:padding = "10sp"
-                android:textSize="14sp"
+                android:textSize="35sp"
                 android:layout_weight="4"
                 android:gravity="center_horizontal"/>
 
@@ -45,10 +47,11 @@
                 android:layout_height="match_parent"
                 android:text="Tee"
                 android:padding = "10sp"
-                android:textSize="14sp"
+                android:textSize="35sp"
                 android:layout_weight="4"
                 android:gravity="center_horizontal"/>
         </TableRow>
 
     </TableLayout>
+
 </LinearLayout>

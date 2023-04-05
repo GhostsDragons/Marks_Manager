@@ -1,12 +1,18 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Marks Manager</string>
     <string-array name="position">
         <item>Student</item>
         <item>Teacher</item>
     </string-array>
     <string-array name="Test">
-        <item>UT1</item>
+        <item tools:ignore="Typos">UT1</item>
         <item>UT2</item>
         <item>End-Sem</item>
+    </string-array>
+    <string-array name="Subject">
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Maths</item>
+        <item>Biology</item>
     </string-array>
 </resources>

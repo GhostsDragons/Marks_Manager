@@ -16,30 +16,20 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Database extends AppCompatActivity {
 
-    int Marks;
-    String Subject;
+    int marks;
 
     public Database() {
     }
 
-    public Database(int marks, String subject) {
-        Marks = marks;
-        Subject = subject;
-    }
-
-    public void setSubject(String subject) {
-        Subject = subject;
-    }
-
-    public void setMarks(int marks) {
-        Marks = marks;
-    }
-
-    public String getSubject() {
-        return Subject;
+    public Database(int marks) {
+        this.marks = marks;
     }
 
     public int getMarks() {
-        return Marks;
+        return marks;
+    }
+
+    public void setMarks(int marks) {
+        this.marks = marks;
     }
 }

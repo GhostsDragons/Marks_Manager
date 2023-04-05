@@ -57,7 +57,7 @@ public class Chemistry extends AppCompatActivity {
         save.setOnClickListener(v-> {
             namestring = name.getText().toString();
             marksint = Integer.parseInt(marks.getText().toString());
-            path = namestring+"/"+"Chemistry/"+selectedOption;
+            path = "Students"+namestring+"/"+"Chemistry/"+selectedOption;
             DatabaseReference myRef = database.getReference(path);
             myRef.setValue(marksint);
             Toast.makeText(Chemistry.this, "Marks Updated", Toast.LENGTH_LONG).show();

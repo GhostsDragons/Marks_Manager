@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
                                     startActivity(new Intent(MainActivity.this, TeacherActivity.class));
                                 }
                                 else {
-                                    startActivity(new Intent(MainActivity.this, Database.class));
+                                    startActivity(new Intent(MainActivity.this, StudentActivity.class));
                                 }
                             }
                         }
