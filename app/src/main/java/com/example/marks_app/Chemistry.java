@@ -61,8 +61,6 @@ public class Chemistry extends AppCompatActivity {
         });
 
         save = findViewById(R.id.Save1);
-        name = findViewById(R.id.Name);
-        marks = findViewById(R.id.Marks);
         Test = findViewById(R.id.examselect);
         table = findViewById(R.id.Marks_Table);
 
