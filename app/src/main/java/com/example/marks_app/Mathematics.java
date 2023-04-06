@@ -89,7 +89,11 @@ public class Mathematics extends AppCompatActivity {
                 name = (TextView) stud.getChildAt(0);
                 marks = (EditText) stud.getChildAt(1);
                 namestring = name.getText().toString();
-                marksint = Integer.parseInt(marks.getText().toString());
+                try {
+                    marksint = Integer.parseInt(marks.getText().toString());
+                }
+                catch (Exception E){
+                }
                 path = "Students/" + namestring + "/" + "Maths/" + selectedOption;
                 DatabaseReference myRef = database.getReference(path);
                 myRef.setValue(marksint);
