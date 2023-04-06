@@ -19,7 +19,7 @@ public class StudentActivity extends AppCompatActivity {
     TableLayout table;
     TableRow stud;
     int marks[];
-    String subject[], Name = "Hari";
+    String subject[], Name = getIntent().getStringExtra("student_name") ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

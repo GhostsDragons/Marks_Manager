@@ -93,6 +93,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String userEmail = loginEmailId.getText().toString();
+                String[] parts = userEmail.split("@");
+                if (parts.length == 2){
+                    String studentname = parts[0];
+                    getIntent().putExtra("Student_name", studentname);
+                }
                 String userPaswd = logInpasswd.getText().toString();
                 if (userEmail.isEmpty()) {
                     loginEmailId.setError("Provide your Email first!");
