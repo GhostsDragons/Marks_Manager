@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     String selectedOption;
     Button btnLogIn;
     Button forgetpassButton;
-    TextView signup;
+    String studentname;
     FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
 
@@ -95,8 +95,8 @@ public class MainActivity extends AppCompatActivity {
                 String userEmail = loginEmailId.getText().toString();
                 String[] parts = userEmail.split("@");
                 if (parts.length == 2){
-                    String studentname = parts[0];
-                    getIntent().putExtra("Student_name", studentname);
+                    studentname = parts[0];
+
                 }
                 String userPaswd = logInpasswd.getText().toString();
                 if (userEmail.isEmpty()) {
@@ -119,7 +119,9 @@ public class MainActivity extends AppCompatActivity {
                                     startActivity(new Intent(MainActivity.this, TeacherActivity.class));
                                 }
                                 else {
-                                    startActivity(new Intent(MainActivity.this, StudentActivity.class));
+                                    Intent student = new Intent(MainActivity.this, StudentActivity.class);
+                                    student.putExtra("student_name", studentname);
+                                    startActivity(student);
                                 }
                             }
                         }

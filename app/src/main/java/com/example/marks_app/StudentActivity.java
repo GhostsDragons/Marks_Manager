@@ -19,11 +19,12 @@ public class StudentActivity extends AppCompatActivity {
     TableLayout table;
     TableRow stud;
     int marks[];
-    String subject[], Name = getIntent().getStringExtra("student_name") ;
+    String subject[], Name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student);
+        Name = getIntent().getStringExtra("student_name");
 
         subject = getResources().getStringArray(R.array.Subject);
 
