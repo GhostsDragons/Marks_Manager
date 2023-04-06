@@ -33,6 +33,7 @@ public class Physics extends AppCompatActivity {
     int marksint;
     TableLayout table;
     TableRow stud;
+    int cnt = 0;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,9 +45,12 @@ public class Physics extends AppCompatActivity {
         SubRef.addValueEventListener(new ValueEventListener(){
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for (DataSnapshot snapshot1: snapshot.getChildren()){
-                    String Name = snapshot1.getKey().toString();
-                    tblrw(Name);
+                if (cnt == 0) {
+                    for (DataSnapshot snapshot1 : snapshot.getChildren()) {
+                        String Name = snapshot1.getKey().toString();
+                        tblrw(Name);
+                    }
+                    cnt++;
                 }
             }
 
@@ -91,10 +95,9 @@ public class Physics extends AppCompatActivity {
                 path = "Students/" + namestring + "/" + "Physics/" + selectedOption;
                 DatabaseReference myRef = database.getReference(path);
                 myRef.setValue(marksint);
+                marks.setText("");
             }
             Toast.makeText(Physics.this, "Marks Updated", Toast.LENGTH_LONG).show();
-            name.setText("");
-            marks.setText("");
         });
     }
 
