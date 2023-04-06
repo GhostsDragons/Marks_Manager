@@ -24,7 +24,7 @@ public class StudentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student);
-        Name = getIntent().getStringExtra("student_name");
+        Name = getIntent().getStringExtra("student_name").substring(0,1).toUpperCase() + getIntent().getStringExtra("student_name").substring(1);
 
         subject = getResources().getStringArray(R.array.Subject);
 
