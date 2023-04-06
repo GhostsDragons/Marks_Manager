@@ -53,69 +53,13 @@
                     android:text="Marks"
                     android:padding = "10sp"
                     android:textSize="35sp"
-                    android:layout_weight="4"
-                    android:gravity="center_horizontal"/>
-                </TableRow>
+                android:layout_weight="4"
+                android:gravity="center_horizontal"/>
+            </TableRow>
 
-            </TableLayout>
+        </TableLayout>
 
-        </LinearLayout>
-
-<!--    <TextView-->
-<!--        android:id="@+id/NM"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Name: "-->
-<!--        android:textSize="30sp"-->
-<!--        app:layout_constraintBottom_toBottomOf="@+id/Name"-->
-<!--        app:layout_constraintEnd_toStartOf="@+id/Name"-->
-<!--        app:layout_constraintHorizontal_bias="0.5"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/Name"-->
-<!--        app:layout_constraintVertical_bias="0.31" />-->
-
-<!--    <EditText-->
-<!--        android:id="@+id/Name"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="48dp"-->
-<!--        android:ems="10"-->
-<!--        android:hint="Name"-->
-<!--        android:inputType="textPersonName"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.5"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/NM"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.398" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/Mak"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Marks:"-->
-<!--        android:textSize="30sp"-->
-<!--        app:layout_constraintBottom_toBottomOf="@+id/Marks"-->
-<!--        app:layout_constraintEnd_toStartOf="@+id/Marks"-->
-<!--        app:layout_constraintHorizontal_bias="0.5"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/Marks"-->
-<!--        app:layout_constraintVertical_bias="0.517" />-->
-
-<!--    <EditText-->
-<!--        android:id="@+id/Marks"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="48dp"-->
-<!--        android:ems="10"-->
-<!--        android:hint="Marks"-->
-<!--        android:inputType="number"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.5"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/Mak"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/Name"-->
-<!--        app:layout_constraintVertical_bias="0.232" />-->
+    </LinearLayout>
 
     <Button
         android:id="@+id/Save1"
