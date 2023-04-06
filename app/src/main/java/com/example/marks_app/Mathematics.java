@@ -92,7 +92,8 @@ public class Mathematics extends AppCompatActivity {
                 try {
                     marksint = Integer.parseInt(marks.getText().toString());
                 }
-                catch (Exception E){
+                catch(Exception E){
+                    continue;
                 }
                 path = "Students/" + namestring + "/" + "Maths/" + selectedOption;
                 DatabaseReference myRef = database.getReference(path);

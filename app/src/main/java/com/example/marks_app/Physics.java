@@ -89,6 +89,12 @@ public class Physics extends AppCompatActivity {
                 name = (TextView) stud.getChildAt(0);
                 marks = (EditText) stud.getChildAt(1);
                 namestring = name.getText().toString();
+                try {
+                    marksint = Integer.parseInt(marks.getText().toString());
+                }
+                catch(Exception E){
+                    continue;
+                }
                 marksint = Integer.parseInt(marks.getText().toString());
                 path = "Students/" + namestring + "/" + "Physics/" + selectedOption;
                 DatabaseReference myRef = database.getReference(path);
