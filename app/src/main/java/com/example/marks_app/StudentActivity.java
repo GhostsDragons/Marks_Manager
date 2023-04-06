@@ -18,16 +18,14 @@ public class StudentActivity extends AppCompatActivity {
 
     TableLayout table;
     TableRow stud;
-    TextView txt;
-    int marks[], cnt = 0;
-    String subject[], test[], Name = "Hari";
+    int marks[];
+    String subject[], Name = "Hari";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student);
 
         subject = getResources().getStringArray(R.array.Subject);
-        test = getResources().getStringArray(R.array.Test);
 
         for (String i : subject){
             DatabaseReference SubRef = FirebaseDatabase.getInstance().getReference().child("Students/"+Name+"/"+i);

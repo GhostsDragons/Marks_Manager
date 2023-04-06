@@ -7,7 +7,7 @@
     <string-array name="Test">
         <item tools:ignore="Typos">UT1</item>
         <item>UT2</item>
-        <item>End-Sem</item>
+        <item>TEE</item>
     </string-array>
     <string-array name="Subject">
         <item>Physics</item>
