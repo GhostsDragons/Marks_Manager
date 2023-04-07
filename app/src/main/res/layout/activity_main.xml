@@ -6,16 +6,20 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@drawable/gradient_lc">
+    android:background="@drawable/flower2">
 
     <EditText
         android:id="@+id/loginEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
+        android:background="@drawable/edittext_border"
+        android:fontFamily="@font/belleza"
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.241"
@@ -27,9 +31,13 @@
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:layout_marginTop="120dp"
+        android:background="@drawable/edittext_border"
+        android:fontFamily="@font/belleza"
         android:hint="Password"
         android:inputType="textPassword"
         android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginEmail"
         app:layout_constraintVertical_bias="0.0"
@@ -37,11 +45,12 @@
 
     <Button
         android:id="@+id/btnLogIn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="163dp"
+        android:layout_height="59dp"
         android:layout_margin="15dp"
         android:layout_marginTop="52dp"
-        android:background="#1C4454"
+        android:background="@drawable/btn_borderless"
+        android:fontFamily="@font/belleza"
         android:text="LogIn"
         android:textColor="#F3F3F3"
         android:textSize="25sp"
@@ -50,25 +59,29 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginpaswd"
-        app:layout_constraintVertical_bias="0.011" />
+        app:layout_constraintVertical_bias="0.158" />
 
     <Button
         android:id="@+id/forgetpass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="#1C4454"
+        android:layout_width="163dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_borderless"
+        android:fontFamily="@font/belleza"
         android:text="Forgot Password"
         android:textColor="#F3F3F3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogIn" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLogIn"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Spinner
         android:id="@+id/positionselector"
         android:layout_width="315dp"
         android:layout_height="48dp"
-        android:background="#2E626D"
+        android:background="@drawable/spinnerstyle"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/loginEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
