@@ -46,7 +46,7 @@ public class Marks_input extends AppCompatActivity {
         bg = (ConstraintLayout) findViewById(R.id.Background);
 
         if(subject.equals("Maths")){
-            bg.setBackground(ContextCompat.getDrawable(this, R.drawable.maths));
+            bg.setBackground(ContextCompat.getDrawable(this, R.drawable.math3));
         }
         else if (subject.equals("Biology")) {
             bg.setBackground(ContextCompat.getDrawable(this, R.drawable.biology));
