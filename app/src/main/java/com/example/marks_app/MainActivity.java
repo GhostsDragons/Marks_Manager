@@ -22,6 +22,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
+    ArrayAdapter<CharSequence> adapter;
     EditText loginEmailId, logInpasswd;
     String selectedOption;
     Button btnLogIn;

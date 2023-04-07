@@ -9,8 +9,8 @@
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="75sp"
         android:layout_marginLeft="10sp"
+        android:layout_marginTop="75sp"
         android:layout_marginRight="10sp">
 
         <TableLayout
@@ -22,50 +22,51 @@
             tools:layout_editor_absoluteY="1dp">
 
             <TableRow>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
                     android:text="Subject"
-                    android:padding = "10sp"
-                    android:textSize="35sp"
-                    android:layout_weight="4"
-                    android:gravity="center_horizontal"/>
+                    android:textSize="35sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
                     android:text="UT1"
-                    android:padding = "10sp"
-                    android:textSize="35sp"
-                    android:layout_weight="4"
-                    android:gravity="center_horizontal"/>
+                    android:textSize="35sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
                     android:text="UT2"
-                    android:padding = "10sp"
-                    android:textSize="35sp"
-                    android:layout_weight="4"
-                    android:gravity="center_horizontal"/>
+                    android:textSize="35sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
                     android:text="Tee"
-                    android:padding = "10sp"
-                    android:textSize="35sp"
-                    android:layout_weight="4"
-                    android:gravity="center_horizontal"/>
+                    android:textSize="35sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Mean"
-                    android:padding = "10sp"
-                    android:textSize="35sp"
                     android:layout_weight="4"
-                    android:gravity="center_horizontal"/>
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="Mean"
+                    android:textSize="35sp" />
             </TableRow>
 
         </TableLayout>
