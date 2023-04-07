@@ -63,13 +63,20 @@ public class StudentActivity extends AppCompatActivity {
             subject.setGravity(Gravity.CENTER);
             subject.setTextSize(25);
             stud.addView(subject);
+            float mean = 0;
             for (int i = 0; i < 3; i++) {
                 TextView Mark = new TextView(this);
                 Mark.setText(""+marks[i]);
                 Mark.setTextSize(20);
                 Mark.setGravity(Gravity.CENTER);
                 stud.addView(Mark);
+                mean += marks[i];
             }
+            mean /= 3;
+            TextView Mean = new TextView(this);
+            Mean.setText(""+mean);
+            Mean.setGravity(Gravity.CENTER);
+            stud.addView(Mean);
             table.addView(stud);
         }
 
