@@ -24,12 +24,12 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 
-public class Biology extends AppCompatActivity {
+public class Marks_input extends AppCompatActivity {
     Button save;
     Spinner Test;
     TextView name;
     EditText marks;
-    String selectedOption, namestring, path;
+    String selectedOption, namestring, path, subject;
     int marksint;
     TableLayout table;
     TableRow stud;
@@ -38,7 +38,7 @@ public class Biology extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_biology);
+        setContentView(R.layout.activity_marks_input);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference SubRef = FirebaseDatabase.getInstance().getReference().child("Students");
@@ -60,6 +60,7 @@ public class Biology extends AppCompatActivity {
             }
         });
 
+        subject = getIntent().getStringExtra("Subject");
         save = findViewById(R.id.Save1);
         Test = findViewById(R.id.examselect);
         table = findViewById(R.id.Marks_Table);
@@ -95,13 +96,12 @@ public class Biology extends AppCompatActivity {
                 catch(Exception E){
                     continue;
                 }
-                marksint = Integer.parseInt(marks.getText().toString());
-                path = "Students/" + namestring + "/" + "Biology/" + selectedOption;
+                path = "Students/" + namestring + "/" + subject + "/" + selectedOption;
                 DatabaseReference myRef = database.getReference(path);
                 myRef.setValue(marksint);
                 marks.setText("");
             }
-            Toast.makeText(Biology.this, "Marks Updated", Toast.LENGTH_LONG).show();
+            Toast.makeText(Marks_input.this, "Marks Updated", Toast.LENGTH_LONG).show();
         });
     }
 

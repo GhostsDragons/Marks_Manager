@@ -21,22 +21,30 @@ public class TeacherActivity extends AppCompatActivity {
 
         Bio.setOnClickListener(v-> {
 
-            startActivity(new Intent(TeacherActivity.this, Biology.class));
+            Intent Subj = new Intent(TeacherActivity.this, Marks_input.class);
+            Subj.putExtra("Subject", "Biology");
+            startActivity(Subj);
         });
 
         Phys.setOnClickListener(v-> {
 
-            startActivity(new Intent(TeacherActivity.this, Physics.class));
+            Intent Subj = new Intent(TeacherActivity.this, Marks_input.class);
+            Subj.putExtra("Subject", "Physics");
+            startActivity(Subj);
         });
 
         Chem.setOnClickListener(v-> {
 
-            startActivity(new Intent(TeacherActivity.this, Chemistry.class));
+            Intent Subj = new Intent(TeacherActivity.this, Marks_input.class);
+            Subj.putExtra("Subject", "Chemistry");
+            startActivity(Subj);
         });
 
         Maths.setOnClickListener(v-> {
 
-            startActivity(new Intent(TeacherActivity.this, Mathematics.class));
+            Intent Subj = new Intent(TeacherActivity.this, Marks_input.class);
+            Subj.putExtra("Subject", "Maths");
+            startActivity(Subj);
         });
     }
 
