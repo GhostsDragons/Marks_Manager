@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         Spinner spinner = findViewById(R.id.positionselector);
         forgetpassButton = findViewById(R.id.forgetpass);
         FirebaseAuth.getInstance().signOut();
+        ArrayAdapter<CharSequence> dropdown;
 
 
 

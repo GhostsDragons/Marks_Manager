@@ -47,5 +47,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.628"
         app:srcCompat="@drawable/darklogo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
