@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -16,6 +17,8 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.content.ContextCompat;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -33,12 +36,19 @@ public class Marks_input extends AppCompatActivity {
     int marksint;
     TableLayout table;
     TableRow stud;
+    ConstraintLayout bg;
     int cnt = 0;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_marks_input);
+        subject = getIntent().getStringExtra("Subject");
+        bg = (ConstraintLayout) findViewById(R.id.Background);
+
+        if(subject.equals("Maths")){
+            bg.setBackground(ContextCompat.getDrawable(this, R.drawable.flower2));
+        }
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference SubRef = FirebaseDatabase.getInstance().getReference().child("Students");
@@ -60,7 +70,6 @@ public class Marks_input extends AppCompatActivity {
             }
         });
 
-        subject = getIntent().getStringExtra("Subject");
         save = findViewById(R.id.Save1);
         Test = findViewById(R.id.examselect);
         table = findViewById(R.id.Marks_Table);
