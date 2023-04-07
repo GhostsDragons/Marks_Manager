@@ -8,7 +8,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -47,7 +46,7 @@ public class Marks_input extends AppCompatActivity {
         bg = (ConstraintLayout) findViewById(R.id.Background);
 
         if(subject.equals("Maths")){
-            bg.setBackground(ContextCompat.getDrawable(this, R.drawable.maths2));
+            bg.setBackground(ContextCompat.getDrawable(this, R.drawable.maths));
         }
         else if (subject.equals("Biology")) {
             bg.setBackground(ContextCompat.getDrawable(this, R.drawable.biology));
