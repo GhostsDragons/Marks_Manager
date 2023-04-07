@@ -24,9 +24,6 @@
             android:name=".TeacherActivity"
             android:exported="false" />
         <activity
-            android:name=".Database"
-            android:exported="false" />
-        <activity
             android:name=".ForgetPassword"
             android:exported="false" />
         <activity
