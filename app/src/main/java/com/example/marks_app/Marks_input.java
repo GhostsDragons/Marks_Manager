@@ -47,7 +47,16 @@ public class Marks_input extends AppCompatActivity {
         bg = (ConstraintLayout) findViewById(R.id.Background);
 
         if(subject.equals("Maths")){
-            bg.setBackground(ContextCompat.getDrawable(this, R.drawable.flower2));
+            bg.setBackground(ContextCompat.getDrawable(this, R.drawable.maths2));
+        }
+        else if (subject.equals("Biology")) {
+            bg.setBackground(ContextCompat.getDrawable(this, R.drawable.biology));
+        }
+        else if (subject.equals("Physics")) {
+            bg.setBackground(ContextCompat.getDrawable(this, R.drawable.physics));
+        }
+        else if (subject.equals("Chemistry")) {
+            bg.setBackground(ContextCompat.getDrawable(this, R.drawable.chemistry));
         }
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
