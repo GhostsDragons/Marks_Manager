@@ -2,6 +2,7 @@ package com.example.marks_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -11,9 +12,10 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+@SuppressLint("CustomSplashScreen")
 public class SplashScreen extends AppCompatActivity {
 
-    private static int SPLASH = 2000;
+    private static final int SPLASH = 2000;
 
     Animation topanim, bottomanim;
     ImageView logo;
@@ -36,13 +38,10 @@ public class SplashScreen extends AppCompatActivity {
         title.setAnimation(topanim);
         tag.setAnimation(bottomanim);
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(SplashScreen.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        new Handler().postDelayed(() -> {
+            Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+            startActivity(intent);
+            finish();
         },SPLASH);
     }
 }

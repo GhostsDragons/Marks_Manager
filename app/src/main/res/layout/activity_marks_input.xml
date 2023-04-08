@@ -35,7 +35,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="1dp">
+            tools:layout_editor_absoluteY="1dp"
+            tools:ignore="UselessParent">
 
             <TableRow>
 
@@ -47,9 +48,10 @@
                     android:fontFamily="@font/poppins_bold"
                     android:gravity="center_horizontal"
                     android:padding="10sp"
-                    android:text="Student"
+                    android:text="@string/student"
                     android:textColor="@color/white"
-                    android:textSize="44dp" />
+                    android:textSize="44sp"
+                    tools:ignore="TextSizeCheck" />
 
                 <TextView
                     android:id="@+id/Exam"
@@ -60,10 +62,11 @@
                     android:fontFamily="@font/poppins_bold"
                     android:gravity="center_horizontal"
                     android:padding="10sp"
-                    android:text="Marks"
+                    android:text="@string/marks"
                     android:textColor="@color/white"
                     android:textColorHighlight="@color/white"
-                    android:textSize="44dp" />
+                    android:textSize="44sp"
+                    tools:ignore="TextSizeCheck" />
             </TableRow>
 
         </TableLayout>
@@ -87,13 +90,14 @@
             android:layout_height="48dp"
             android:layout_marginBottom="45dp"
             android:background="@drawable/btn_borderless"
-            android:text="New Student"
+            android:text="@string/new_student"
             app:layout_constraintBottom_toTopOf="@id/Save1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.49"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Lnr"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="VisualLintButtonSize" />
 
         <Button
             android:id="@+id/Save1"
@@ -101,13 +105,14 @@
             android:layout_height="48dp"
             android:layout_marginBottom="45dp"
             android:background="@drawable/btn_borderless"
-            android:text="Save"
+            android:text="@string/save"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.49"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/newstud"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="VisualLintButtonSize" />
 
 
 

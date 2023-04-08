@@ -1,12 +1,10 @@
 package com.example.marks_app;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.*;
+import android.widget.Button;
 
-import com.google.android.material.tabs.TabLayout;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class TeacherActivity extends AppCompatActivity {
     Button Maths, Phys, Chem, Bio;

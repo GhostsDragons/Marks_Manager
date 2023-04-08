@@ -48,17 +48,19 @@ public class Marks_input extends AppCompatActivity {
         bg = (ConstraintLayout) findViewById(R.id.Background);
         newstud = findViewById(R.id.newstud);
 
-        if(subject.equals("Maths")){
-            bg.setBackground(ContextCompat.getDrawable(this, R.drawable.math3));
-        }
-        else if (subject.equals("Biology")) {
-            bg.setBackground(ContextCompat.getDrawable(this, R.drawable.biology));
-        }
-        else if (subject.equals("Physics")) {
-            bg.setBackground(ContextCompat.getDrawable(this, R.drawable.physics));
-        }
-        else if (subject.equals("Chemistry")) {
-            bg.setBackground(ContextCompat.getDrawable(this, R.drawable.chemistry));
+        switch (subject) {
+            case "Maths":
+                bg.setBackground(ContextCompat.getDrawable(this, R.drawable.math3));
+                break;
+            case "Biology":
+                bg.setBackground(ContextCompat.getDrawable(this, R.drawable.biology));
+                break;
+            case "Physics":
+                bg.setBackground(ContextCompat.getDrawable(this, R.drawable.physics));
+                break;
+            case "Chemistry":
+                bg.setBackground(ContextCompat.getDrawable(this, R.drawable.chemistry));
+                break;
         }
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -68,7 +70,7 @@ public class Marks_input extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (cnt == 0) {
                     for (DataSnapshot snapshot1 : snapshot.getChildren()) {
-                        String Name = snapshot1.getKey().toString();
+                        String Name = snapshot1.getKey();
                         tblrw(Name);
                     }
                     cnt++;
@@ -142,7 +144,6 @@ public class Marks_input extends AppCompatActivity {
         stud.addView(Student);
         EditText Marks = new EditText(this);
         Marks.setTextSize(20);
-        Marks.setGravity(Gravity.LEFT);
         stud.addView(Marks);
         table.addView(stud);
     }

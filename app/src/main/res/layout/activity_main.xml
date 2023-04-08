@@ -15,7 +15,7 @@
         android:layout_margin="15dp"
         android:background="@drawable/edittext_border"
         android:fontFamily="@font/belleza"
-        android:hint="Email"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         android:padding="10dp"
@@ -23,7 +23,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.241"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="16dp"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/loginpaswd"
@@ -33,7 +34,7 @@
         android:layout_marginTop="120dp"
         android:background="@drawable/edittext_border"
         android:fontFamily="@font/belleza"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:padding="10dp"
@@ -41,7 +42,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginEmail"
         app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="15dp" />
+        tools:layout_editor_absoluteX="15dp"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/btnLogIn"
@@ -51,7 +53,7 @@
         android:layout_marginTop="52dp"
         android:background="@drawable/btn_borderless"
         android:fontFamily="@font/belleza"
-        android:text="LogIn"
+        android:text="@string/login"
         android:textColor="#F3F3F3"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,7 +70,7 @@
         android:layout_marginTop="40dp"
         android:background="@drawable/btn_borderless"
         android:fontFamily="@font/belleza"
-        android:text="Forgot Password"
+        android:text="@string/forgot_password"
         android:textColor="#F3F3F3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

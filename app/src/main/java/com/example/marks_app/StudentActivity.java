@@ -3,6 +3,7 @@ package com.example.marks_app;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.view.Gravity;
 import android.widget.*;
 import android.os.Bundle;
@@ -13,13 +14,16 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.Objects;
+
 
 public class StudentActivity extends AppCompatActivity {
 
     TableLayout table;
     TableRow stud;
-    int marks[];
-    String subject[], Name;
+    int[] marks;
+    String[] subject;
+    String Name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,14 +38,14 @@ public class StudentActivity extends AppCompatActivity {
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     marks = new int[3];
                     for (DataSnapshot snapshot1: snapshot.getChildren()){
-                        if (snapshot1.getKey().toString().equals("UT1")){
-                            marks[0] = Integer.parseInt(snapshot1.getValue().toString());
+                        if (Objects.equals(snapshot1.getKey(), "UT1")){
+                            marks[0] = Integer.parseInt(Objects.requireNonNull(snapshot1.getValue()).toString());
                         }
-                        else if (snapshot1.getKey().toString().equals("UT2")){
-                            marks[1] = Integer.parseInt(snapshot1.getValue().toString());
+                        else if (Objects.equals(snapshot1.getKey(), "UT2")){
+                            marks[1] = Integer.parseInt(Objects.requireNonNull(snapshot1.getValue()).toString());
                         }
                         else {
-                            marks[2] = Integer.parseInt(snapshot1.getValue().toString());
+                            marks[2] = Integer.parseInt(Objects.requireNonNull(snapshot1.getValue()).toString());
                         }
                     }
                     tblrw(i, marks);
@@ -53,6 +57,7 @@ public class StudentActivity extends AppCompatActivity {
             }
         }
 
+        @SuppressLint("SetTextI18n")
         public void tblrw(String Subject, int[] marks){
             table = findViewById(R.id.Marks_Table);
             stud = new TableRow(this);
@@ -65,7 +70,7 @@ public class StudentActivity extends AppCompatActivity {
             float mean = 0;
             for (int i = 0; i < 3; i++) {
                 TextView Mark = new TextView(this);
-                Mark.setText(""+marks[i]);
+                Mark.setText(Integer.toString(marks[i]));
                 Mark.setTextSize(20);
                 Mark.setGravity(Gravity.CENTER);
                 stud.addView(Mark);

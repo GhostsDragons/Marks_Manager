@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/belleza"
-        android:text="Learner's Club"
+        android:text="@string/learner_s_club"
         android:textAlignment="center"
         android:textColorHighlight="#1C4454"
         android:textSize="70sp"
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:fontFamily="@font/poppins_italic"
-        android:text="Learning Sans Frontières"
+        android:text="@string/TagLine"
         android:textAlignment="center"
         android:textColorHighlight="#1C4454"
         android:textSize="28sp"
@@ -48,5 +48,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.628"
-        app:srcCompat="@drawable/darklogo" />
+        app:srcCompat="@drawable/darklogo"
+        android:contentDescription="@string/todo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

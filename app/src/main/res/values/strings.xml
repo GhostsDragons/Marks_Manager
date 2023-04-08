@@ -1,5 +1,32 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Marks Manager</string>
+    <string name="Email_input">Enter Your Mail ID</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="login">LogIn</string>
+    <string name="student">Student</string>
+    <string name="marks">Marks</string>
+    <string name="new_student">New Student</string>
+    <string name="save">Save</string>
+    <string name="name">Name:</string>
+    <string name="Name">Name</string>
+    <string name="Marks">Marks:</string>
+    <string name="MARKS">Marks</string>
+    <string name="learner_s_club">Learner\'s Club</string>
+    <string name="TagLine">Learning Sans Frontières</string>
+    <string name="todo">TODO</string>
+    <string name="subject">Subject</string>
+    <string name="ut1" tools:ignore="Typos">UT1</string>
+    <string name="ut2">UT2</string>
+    <string name="tee">TEE</string>
+    <string name="mean">Mean</string>
+    <string name="mathematics">Mathematics</string>
+    <string name="physics">Physics</string>
+    <string name="chemistry">Chemistry</string>
+    <string name="biology">Biology</string>
+    <string name="choicw">Choose Your Subject</string>
     <string-array name="position">
         <item>Student</item>
         <item>Teacher</item>
