@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
                             }
                             else {
                                 if (selectedOption.equals("Teacher")) {
-                                    DatabaseReference SubRef = FirebaseDatabase.getInstance().getReference().child("Teachers");
+                                    DatabaseReference SubRef = FirebaseDatabase.getInstance().getReference().child("Teachers/");
                                     SubRef.addValueEventListener(new ValueEventListener() {
                                         @Override
                                         public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
                                     }
                                     }
                                 else {
-                                    DatabaseReference SubRef = FirebaseDatabase.getInstance().getReference().child("Students");
+                                    DatabaseReference SubRef = FirebaseDatabase.getInstance().getReference().child("Students/");
                                         SubRef.addValueEventListener(new ValueEventListener() {
                                             @Override
                                             public void onDataChange(@NonNull DataSnapshot snapshot) {
