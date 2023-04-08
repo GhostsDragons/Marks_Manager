@@ -103,6 +103,11 @@ public class Marks_input extends AppCompatActivity {
             }
         });
 
+        newstud.setOnClickListener(v-> {
+            Intent Subj = new Intent(Marks_input.this, NewStudent.class);
+            Subj.putExtra("Subject", "Maths");
+            startActivity(Subj);
+        });
         save.setOnClickListener(v-> {
             for (int i = 1; i < table.getChildCount(); i++) {
                 stud = (TableRow) table.getChildAt(i);
@@ -139,6 +144,3 @@ public class Marks_input extends AppCompatActivity {
         table.addView(stud);
     }
 }
-//    Intent Subj = new Intent(TeacherActivity.this, Marks_input.class);
-//            Subj.putExtra("Subject", "Maths");
-//                    startActivity(Subj);
