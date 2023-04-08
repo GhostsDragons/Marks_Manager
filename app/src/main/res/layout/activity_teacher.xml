@@ -32,6 +32,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Bio" />
 
+
+    <Button
+        android:id="@+id/Chem"
+        android:layout_width="159dp"
+        android:layout_height="51dp"
+        android:text="Chemistry"
+        app:layout_constraintBottom_toBottomOf="@+id/Bio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Bio"
+        app:layout_constraintTop_toTopOf="@+id/Bio" />
+
+     <Button
+        android:id="@+id/Bio"
+        android:layout_width="159dp"
+        android:layout_height="51dp"
+        android:text="Biology"
+        app:layout_constraintBottom_toTopOf="@+id/Phys"
+        app:layout_constraintEnd_toStartOf="@+id/Chem"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="339dp"
@@ -46,26 +69,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/Chem"
-        android:layout_width="159dp"
-        android:layout_height="51dp"
-        android:text="Chemistry"
-        app:layout_constraintBottom_toBottomOf="@+id/Bio"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/Bio"
-        app:layout_constraintTop_toTopOf="@+id/Bio" />
-
-    <Button
-        android:id="@+id/Bio"
-        android:layout_width="159dp"
-        android:layout_height="51dp"
-        android:text="Biology"
-        app:layout_constraintBottom_toTopOf="@+id/Phys"
-        app:layout_constraintEnd_toStartOf="@+id/Chem"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

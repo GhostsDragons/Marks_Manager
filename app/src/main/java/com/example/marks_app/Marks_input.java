@@ -1,6 +1,7 @@
 package com.example.marks_app;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -27,7 +28,7 @@ import com.google.firebase.database.ValueEventListener;
 
 
 public class Marks_input extends AppCompatActivity {
-    Button save;
+    Button save, newstud;
     Spinner Test;
     TextView name;
     EditText marks;
@@ -44,6 +45,7 @@ public class Marks_input extends AppCompatActivity {
         setContentView(R.layout.activity_marks_input);
         subject = getIntent().getStringExtra("Subject");
         bg = (ConstraintLayout) findViewById(R.id.Background);
+        newstud = findViewById(R.id.newstud);
 
         if(subject.equals("Maths")){
             bg.setBackground(ContextCompat.getDrawable(this, R.drawable.math3));
@@ -137,3 +139,6 @@ public class Marks_input extends AppCompatActivity {
         table.addView(stud);
     }
 }
+//    Intent Subj = new Intent(TeacherActivity.this, Marks_input.class);
+//            Subj.putExtra("Subject", "Maths");
+//                    startActivity(Subj);
