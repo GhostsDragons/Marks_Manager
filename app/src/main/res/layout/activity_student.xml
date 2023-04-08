@@ -5,11 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".StudentActivity"
+    android:background="@drawable/gradient_lc"
     android:orientation="vertical">
 
     <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginLeft="10sp"
         android:layout_marginTop="75sp"
         android:layout_marginRight="10sp"
@@ -32,26 +33,29 @@
                     android:layout_weight="4"
                     android:gravity="center_horizontal"
                     android:padding="10sp"
+                    android:fontFamily="@font/belleza"
                     android:text="Subject"
-                    android:textSize="35sp" />
+                    android:textSize="50sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="4"
                     android:gravity="center_horizontal"
+                    android:fontFamily="@font/belleza"
                     android:padding="10sp"
                     android:text="UT1"
-                    android:textSize="35sp" />
+                    android:textSize="50sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="4"
                     android:gravity="center_horizontal"
+                    android:fontFamily="@font/belleza"
                     android:padding="10sp"
                     android:text="UT2"
-                    android:textSize="35sp" />
+                    android:textSize="50sp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -59,48 +63,23 @@
                     android:layout_weight="4"
                     android:gravity="center_horizontal"
                     android:padding="10sp"
-                    android:text="Tee"
-                    android:textSize="35sp" />
+                    android:fontFamily="@font/belleza"
+                    android:text="TEE"
+                    android:textSize="50sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="4"
                     android:gravity="center_horizontal"
+
                     android:padding="10sp"
                     android:text="Mean"
-                    android:textSize="35sp" />
+                    android:textSize="50sp" />
             </TableRow>
 
         </TableLayout>
 
     </HorizontalScrollView>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="100dp">
-
-        <TextView
-            android:id="@+id/Grant_mean"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:padding="10sp"
-            android:text="Grant Mean = "
-            android:textSize="35sp" />
-
-        <TextView
-            android:id="@+id/mean"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:padding="10sp"
-            android:textSize="35sp" />
-
-
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

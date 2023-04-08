@@ -19,12 +19,15 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/Phys"
         app:layout_constraintTop_toTopOf="@+id/Phys"
+        android:background="@drawable/btn_borderless"
         app:layout_constraintVertical_bias="0.0" />
+
 
     <Button
         android:id="@+id/Phys"
         android:layout_width="159dp"
         android:layout_height="51dp"
+        android:background="@drawable/btn_borderless"
         android:text="Physics"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/maths"
@@ -32,22 +35,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Bio" />
 
-
     <Button
         android:id="@+id/Chem"
         android:layout_width="159dp"
         android:layout_height="51dp"
         android:text="Chemistry"
         app:layout_constraintBottom_toBottomOf="@+id/Bio"
+        android:background="@drawable/btn_borderless"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/Bio"
         app:layout_constraintTop_toTopOf="@+id/Bio" />
 
-     <Button
+    <Button
         android:id="@+id/Bio"
         android:layout_width="159dp"
         android:layout_height="51dp"
+        android:background="@drawable/btn_borderless"
         android:text="Biology"
         app:layout_constraintBottom_toTopOf="@+id/Phys"
         app:layout_constraintEnd_toStartOf="@+id/Chem"

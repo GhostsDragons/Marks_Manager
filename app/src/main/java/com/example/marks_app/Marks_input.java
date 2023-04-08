@@ -2,6 +2,7 @@ package com.example.marks_app;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -103,6 +104,11 @@ public class Marks_input extends AppCompatActivity {
             }
         });
 
+        newstud.setOnClickListener(v-> {
+            Intent Subj = new Intent(Marks_input.this, NewStudent.class);
+            Subj.putExtra("Subject", "Maths");
+            startActivity(Subj);
+        });
         save.setOnClickListener(v-> {
             for (int i = 1; i < table.getChildCount(); i++) {
                 stud = (TableRow) table.getChildAt(i);
@@ -128,17 +134,16 @@ public class Marks_input extends AppCompatActivity {
         stud = new TableRow(this);
         TextView Student = new TextView(this);
         Student.setText(Name);
-        Student.setAllCaps(true);
         Student.setGravity(Gravity.CENTER);
-        Student.setTextSize(25);
+        Student.setTextSize(35);
+        Student.setTypeface( null, Typeface.BOLD);
+        Student.setTextColor(getResources().getColor(R.color.black));
+        Student.setPadding(25,4,20,4);
         stud.addView(Student);
         EditText Marks = new EditText(this);
         Marks.setTextSize(20);
-        Marks.setGravity(Gravity.CENTER);
+        Marks.setGravity(Gravity.LEFT);
         stud.addView(Marks);
         table.addView(stud);
     }
 }
-//    Intent Subj = new Intent(TeacherActivity.this, Marks_input.class);
-//            Subj.putExtra("Subject", "Maths");
-//                    startActivity(Subj);

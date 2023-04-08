@@ -18,8 +18,12 @@ import com.google.firebase.auth.FirebaseUser;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.AdapterView;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
     ArrayAdapter<CharSequence> adapter;
@@ -29,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     Button forgetpassButton;
     String studentname;
     FirebaseAuth firebaseAuth;
+    boolean accept;
     private FirebaseAuth.AuthStateListener authStateListener;
 
     @Override
@@ -41,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         btnLogIn = findViewById(R.id.btnLogIn);
         Spinner spinner = findViewById(R.id.positionselector);
         forgetpassButton = findViewById(R.id.forgetpass);
+        accept = false;
         FirebaseAuth.getInstance().signOut();
         ArrayAdapter<CharSequence> dropdown;
 
@@ -50,13 +56,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
-//                if (user != null) {
-//                    Toast.makeText(MainActivity.this, "User logged in ", Toast.LENGTH_SHORT).show();
-////                    Intent I = new Intent(MainActivity.this, UserActivity.class);
-////                    startActivity(I);
-//                } else {
-//                    Toast.makeText(MainActivity.this, "Login to continue", Toast.LENGTH_SHORT).show();
-//                }
             }
         };
 
@@ -92,7 +91,6 @@ public class MainActivity extends AppCompatActivity {
                 String[] parts = userEmail.split("@");
                 if (parts.length == 2){
                     studentname = parts[0];
-
                 }
                 String userPaswd = logInpasswd.getText().toString();
                 if (userEmail.isEmpty()) {
@@ -111,15 +109,56 @@ public class MainActivity extends AppCompatActivity {
                                 Toast.makeText(MainActivity.this, "Not sucessfull", Toast.LENGTH_SHORT).show();
                             }
                             else {
-                                if (selectedOption.compareTo("Teacher") == 0) {
-                                    startActivity(new Intent(MainActivity.this, TeacherActivity.class));
-                                }
+                                if (selectedOption.equals("Teacher")) {
+                                    DatabaseReference SubRef = FirebaseDatabase.getInstance().getReference().child("Teachers/");
+                                    SubRef.addValueEventListener(new ValueEventListener() {
+                                        @Override
+                                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                            for (DataSnapshot snapshot1: snapshot.getChildren()) {
+                                                if (snapshot1.getValue().toString().equalsIgnoreCase(studentname)){
+                                                    accept = true;
+                                                    break;
+                                                }
+                                            }
+                                        }
+                                        @Override
+                                        public void onCancelled(@NonNull DatabaseError error) {
+                                        }
+                                    });
+                                    if(accept) {
+                                        startActivity(new Intent(MainActivity.this, TeacherActivity.class));
+                                    }
+                                    else {
+                                        Toast.makeText(MainActivity.this, "Invalid Teacher", Toast.LENGTH_SHORT).show();
+                                    }
+                                    }
                                 else {
-                                    Intent student = new Intent(MainActivity.this, StudentActivity.class);
-                                    student.putExtra("student_name", studentname);
-                                    startActivity(student);
+                                    DatabaseReference SubRef = FirebaseDatabase.getInstance().getReference().child("Students/");
+                                        SubRef.addValueEventListener(new ValueEventListener() {
+                                            @Override
+                                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                for (DataSnapshot snapshot1: snapshot.getChildren()) {
+                                                    if (snapshot1.getKey().toString().equalsIgnoreCase(studentname)){
+                                                        accept = true;
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                            @Override
+                                            public void onCancelled(@NonNull DatabaseError error) {
+                                            }
+                                        });
+                                        if(accept) {
+                                            Intent student = new Intent(MainActivity.this, StudentActivity.class);
+                                            student.putExtra("student_name", studentname);
+                                            startActivity(student);
+                                        }
+                                        else {
+                                            Toast.makeText(MainActivity.this, "Invalid Student", Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
                                 }
-                            }
+
                         }
                     });
                 } else {

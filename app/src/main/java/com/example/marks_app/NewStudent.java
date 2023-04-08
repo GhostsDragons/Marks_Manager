@@ -58,7 +58,7 @@ public class NewStudent extends AppCompatActivity {
         save.setOnClickListener(v-> {
             namestring = name.getText().toString();
             marksint = Integer.parseInt(marks.getText().toString());
-            path = "Students"+namestring+"/"+subject+"/"+selectedOption;
+            path = "Students/"+namestring+"/"+subject+  "/"+selectedOption;
             DatabaseReference myRef = database.getReference(path);
             myRef.setValue(marksint);
             Toast.makeText(NewStudent.this, "Marks Updated", Toast.LENGTH_LONG).show();
