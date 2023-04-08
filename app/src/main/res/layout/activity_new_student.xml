@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".NewStudent"
     tools:layout_editor_absoluteX="-75dp"
+    android:background="@drawable/gradient_lc"
     tools:layout_editor_absoluteY="0dp">
 
     <Spinner
@@ -13,6 +14,7 @@
         android:layout_width="358dp"
         android:layout_height="48dp"
         android:layout_marginTop="148dp"
+        android:background="@drawable/spinnerstyle"
         app:layout_constraintBottom_toTopOf="@+id/Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
@@ -26,35 +28,46 @@
         android:id="@+id/NM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
         android:text="Name: "
+        android:textColor="#0E252E"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/Name"
         app:layout_constraintEnd_toStartOf="@+id/Name"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/Name"
-        app:layout_constraintVertical_bias="0.31" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/Name"
-        android:layout_width="wrap_content"
+        android:layout_width="226dp"
         android:layout_height="48dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edittext_border"
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
+        android:paddingLeft="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/NM"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.398" />
+        app:layout_constraintVertical_bias="0.401" />
 
     <TextView
         android:id="@+id/Mak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
         android:text="Marks:"
+        android:textColor="#0E252E"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/Marks"
         app:layout_constraintEnd_toStartOf="@+id/Marks"
@@ -65,29 +78,33 @@
 
     <EditText
         android:id="@+id/Marks"
-        android:layout_width="wrap_content"
+        android:layout_width="228dp"
         android:layout_height="48dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edittext_border"
         android:ems="10"
         android:hint="Marks"
         android:inputType="number"
+        android:paddingLeft="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/Mak"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Name"
-        app:layout_constraintVertical_bias="0.232" />
+        app:layout_constraintVertical_bias="0.214" />
 
     <Button
         android:id="@+id/Save1"
         android:layout_width="358dp"
         android:layout_height="48dp"
         android:text="Save"
+        android:background="@drawable/btn_borderless"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Marks"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintVertical_bias="0.22" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

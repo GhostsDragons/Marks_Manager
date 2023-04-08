@@ -20,14 +20,11 @@ public class StudentActivity extends AppCompatActivity {
     TableRow stud;
     int marks[];
     String subject[], Name;
-    Double Gmean = 0D;
-    TextView GMN;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student);
         Name = getIntent().getStringExtra("student_name").substring(0,1).toUpperCase() + getIntent().getStringExtra("student_name").substring(1);
-        GMN = findViewById(R.id.mean);
         subject = getResources().getStringArray(R.array.Subject);
 
         for (String i : subject){
@@ -54,8 +51,6 @@ public class StudentActivity extends AppCompatActivity {
                 }
                 });
             }
-            Gmean /= 3;
-            GMN.setText(""+Gmean);
         }
 
         public void tblrw(String Subject, int[] marks){
@@ -77,7 +72,6 @@ public class StudentActivity extends AppCompatActivity {
                 mean += marks[i];
             }
             mean /= 3;
-            Gmean += mean;
             TextView Mean = new TextView(this);
             Mean.setText(""+mean);
             Mean.setGravity(Gravity.CENTER);
