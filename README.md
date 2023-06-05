@@ -1,6 +1,6 @@
 # Marks_Manager App
 Marks Manager App
-Marks Manager App is a student-centric application designed to help students and educators manage and organize their academic progress in one convenient place. This app provides an easy-to-use interface for inputting and tracking grades, automatic calculation of GPA, CGPA, and percentage. With Marks Manager App, students, teachers, and parents can easily monitor and manage grades, and track progress towards academic success.
+Marks Manager App is a student-centric application designed to help students and educators manage and organize their academic progress in one convenient place. This app provides an easy-to-use interface for inputting and tracking grades, automatic calculation of GPA, CGPA, and percentage, and detailed analytics and insights to visualize academic performance over time. With Marks Manager App, students, teachers, and parents can easily monitor and manage grades, and track progress towards academic success.
 
 Features
 Easy-to-use Interface: Marks Manager App provides a user-friendly interface for inputting and tracking grades, making it simple for students and educators to manage their academic progress.
