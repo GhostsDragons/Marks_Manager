@@ -1,0 +1,13 @@
+#Sat Apr 08 16:57:34 IST 2023
+path.3=5/classes.dex
+path.2=1/classes.dex
+path.1=0/classes.dex
+path.0=classes.dex
+base.3=C\:\\Users\\dummy\\AndroidStudioProjects\\Marks_Vikram\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\5\\classes.dex
+base.2=C\:\\Users\\dummy\\AndroidStudioProjects\\Marks_Vikram\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\1\\classes.dex
+base.1=C\:\\Users\\dummy\\AndroidStudioProjects\\Marks_Vikram\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+base.0=C\:\\Users\\dummy\\AndroidStudioProjects\\Marks_Vikram\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex

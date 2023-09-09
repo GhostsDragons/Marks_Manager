@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-mergeDebugResources-34:\\layout\\activity_teacher.xml",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\layout\\activity_teacher.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-mergeDebugResources-34:\\layout\\activity_new_student.xml",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\layout\\activity_new_student.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-mergeDebugResources-34:\\layout\\activity_splash_screen.xml",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\layout\\activity_splash_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-mergeDebugResources-34:\\layout\\activity_forget_password.xml",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\layout\\activity_forget_password.xml"
+    },
+    {
+        "merged": "com.example.marks_app-mergeDebugResources-34:/layout/activity_teacher.xml",
+        "source": "com.example.marks_app-main-37:/layout/activity_teacher.xml"
+    },
+    {
+        "merged": "com.example.marks_app-mergeDebugResources-34:/layout/activity_student.xml",
+        "source": "com.example.marks_app-main-37:/layout/activity_student.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-mergeDebugResources-34:\\layout\\activity_marks_input.xml",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\layout\\activity_marks_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-mergeDebugResources-34:\\layout\\activity_student.xml",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\layout\\activity_student.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-mergeDebugResources-34:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-mergeDebugResources-34:\\layout\\spinnerdropdownlayout.xml",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\layout\\spinnerdropdownlayout.xml"
+    }
+]

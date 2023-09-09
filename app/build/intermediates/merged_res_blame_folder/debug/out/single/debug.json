@@ -1,0 +1,294 @@
+[
+    {
+        "merged": "com.example.marks_app-merged_res-35:/layout_activity_student.xml.flat",
+        "source": "com.example.marks_app-main-37:/layout/activity_student.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable_darklogo.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable\\darklogo.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\font_poppins_italic.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\font\\poppins_italic.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\raw_mathsbutton.json.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\raw\\mathsbutton.json"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable_spinnerstyle.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable\\spinnerstyle.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\layout_activity_splash_screen.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\layout\\activity_splash_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable_studybg.jpg.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable\\studybg.jpg"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\layout_activity_new_student.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\layout\\activity_new_student.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\raw_biologybutton.json.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\raw\\biologybutton.json"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\layout_activity_marks_input.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\layout\\activity_marks_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable_flower2.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable\\flower2.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable_edittext_border.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable\\edittext_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable_maths.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable\\maths.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable_marksinpdesign.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable\\marksinpdesign.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\layout_activity_forget_password.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\layout\\activity_forget_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "com.example.marks_app-merged_res-35:/drawable_cell_shape.xml.flat",
+        "source": "com.example.marks_app-main-37:/drawable/cell_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable_biology.jpg.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable\\biology.jpg"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable_img.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable\\img.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable_forgotflower.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable\\forgotflower.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable_flower3.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable\\flower3.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\anim_top_animation.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\anim\\top_animation.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\raw_physicsbutton.json.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\raw\\physicsbutton.json"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable_chemistry.jpg.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable\\chemistry.jpg"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable_btn_borderless.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable\\btn_borderless.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable_math3.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable\\math3.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\layout_spinnerdropdownlayout.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\layout\\spinnerdropdownlayout.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-anydpi-v33\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable_physics.jpg.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable\\physics.jpg"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable_maths2.jpg.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable\\maths2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\raw_chemistrybutton.json.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\raw\\chemistrybutton.json"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable_flower.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable\\flower.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable_squircle.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable\\squircle.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\anim_bottom_animation.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\anim\\bottom_animation.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable_newstustyle.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable\\newstustyle.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\layout_activity_teacher.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\layout\\activity_teacher.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable_gradient_lc.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable\\gradient_lc.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\layout_activity_student.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\layout\\activity_student.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\font_poppins_bold.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\font\\poppins_bold.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.marks_app-merged_res-35:/layout_activity_teacher.xml.flat",
+        "source": "com.example.marks_app-main-37:/layout/activity_teacher.xml"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\drawable_lightlogo.png.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\drawable\\lightlogo.png"
+    },
+    {
+        "merged": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-merged_res-35:\\font_belleza.ttf.flat",
+        "source": "C:\\Users\\dummy\\.gradle\\daemon\\7.5\\com.example.marks_app-main-37:\\font\\belleza.ttf"
+    }
+]

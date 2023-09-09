@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "490560378841",
+    "firebase_url": "https://marks-app-learners-club-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "marks-app-learners-club",
+    "storage_bucket": "marks-app-learners-club.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490560378841:android:af11f25f1bacfcbdb62bc8",
+        "android_client_info": {
+          "package_name": "com.example.marks_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490560378841-umcvodu1j0u3vm207i0b3n11fda8gv3c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCah67pQWCVPV8FHPNKlcUYN7Yq4nKpWb0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490560378841-umcvodu1j0u3vm207i0b3n11fda8gv3c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
